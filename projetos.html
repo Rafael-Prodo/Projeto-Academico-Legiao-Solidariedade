@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciativas Solidárias | Legião da Solidariedade</title>
+  <meta name="description" content="Conheça os projetos educacionais, ambientais e sociais desenvolvidos pela ONG Legião da Solidariedade.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#conteudo-principal" class="pular-link">Pular para o conteúdo principal</a>
+  <div id="anuncioRota" class="sr-only" aria-live="polite"></div>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__wrapper">
+      <a href="index.html" class="logo" aria-label="Legião da Solidariedade - página inicial">
+        <img class="logo__imagem" src="assets/logo.png" alt="">
+        <span>Legião da Solidariedade</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navPrincipal" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navPrincipal" aria-label="Navegação principal">
+        <ul class="nav__lista">
+          <li><a href="index.html" class="nav__link">Início</a></li>
+          <li><a href="projetos.html" class="nav__link" aria-current="page">Iniciativas</a></li>
+          <li><a href="cadastro.html" class="nav__link nav__link--destaque">Seja Voluntário</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <section class="pagina-hero" aria-labelledby="pagina-hero-titulo">
+      <div class="container">
+        <p class="hero__eyebrow">Nossas frentes de atuação</p>
+        <h1 id="pagina-hero-titulo">Iniciativas que conectam pessoas a causas</h1>
+        <p class="hero__texto">
+          Cada projeto nasce de uma necessidade real identificada junto às comunidades atendidas.
+          Conheça as frentes em que você pode contribuir.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="lista-projetos-titulo">
+      <div class="container">
+        <h2 id="lista-projetos-titulo" class="sr-only">Lista de projetos</h2>
+
+        <div class="projetos-grade" id="projetos-grade" aria-live="polite">
+          <!-- Os cards de projeto são gerados dinamicamente por js/templates.js
+               a partir do array DADOS_PROJETOS, clonando o <template> abaixo. -->
+        </div>
+
+        <template id="template-projeto">
+          <article class="projeto-card">
+            <p class="projeto-card__categoria"></p>
+            <h3></h3>
+            <p class="projeto-card__descricao"></p>
+            <dl class="projeto-card__meta">
+              <div><dt>Frequência</dt><dd></dd></div>
+              <div><dt>Voluntários</dt><dd></dd></div>
+            </dl>
+          </article>
+        </template>
+      </div>
+    </section>
+
+    <section class="secao secao--cta" aria-labelledby="cta-titulo">
+      <div class="container cta__conteudo">
+        <h2 id="cta-titulo">Encontrou um projeto com a sua cara?</h2>
+        <p>Cadastre-se e nossa equipe entrará em contato para os próximos passos.</p>
+        <a href="cadastro.html" class="botao botao--primario">Cadastre-se agora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div>
+        <p class="logo logo--rodape"><span aria-hidden="true">🤝</span> Legião da Solidariedade</p>
+        <p>Organização da sociedade civil de interesse público (OSCIP).</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <h2 class="rodape__titulo">Navegação</h2>
+        <ul class="rodape__lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Iniciativas</a></li>
+          <li><a href="cadastro.html">Seja Voluntário</a></li>
+        </ul>
+      </nav>
+      <address class="rodape__contato">
+        <h2 class="rodape__titulo">Contato</h2>
+        <p>contato@legiaodasolidariedade.org.br</p>
+        <p>(11) 4002-8922</p>
+        <p>São Paulo, SP - Brasil</p>
+      </address>
+    </div>
+    <p class="rodape__copy">&copy; <span id="anoAtual">2026</span> Legião da Solidariedade. Projeto acadêmico de desenvolvimento front-end.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/mascaras.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/historico.js"></script>
+  <script src="js/validacao-cadastro.js"></script>
+  <script src="js/grafico.js"></script>
+  <script src="js/spa.js"></script>
+</body>
+</html>

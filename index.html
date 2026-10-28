@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legião da Solidariedade | Transformando comunidades através do voluntariado</title>
+  <meta name="description"
+    content="ONG Legião da Solidariedade - Conectando pessoas e comunidades por meio de iniciativas sociais, educacionais e ambientais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;family=Inter:wght@400;500&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a href="#conteudo-principal" class="pular-link">Pular para o conteúdo principal</a>
+  <div id="anuncioRota" class="sr-only" aria-live="polite"></div>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__wrapper">
+      <a href="index.html" class="logo" aria-label="Legião da Solidariedade - página inicial">
+        <img class="logo__imagem" src="assets/logo.png" alt="">
+        <span>Legião da Solidariedade</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navPrincipal"
+        aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navPrincipal" aria-label="Navegação principal">
+        <ul class="nav__lista">
+          <li><a href="index.html" class="nav__link" aria-current="page">Início</a></li>
+          <li><a href="projetos.html" class="nav__link">Iniciativas</a></li>
+          <li><a href="cadastro.html" class="nav__link nav__link--destaque">Seja Voluntário</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero__conteudo">
+        <p class="hero__eyebrow">Desde 2012 construindo pontes solidárias</p>
+        <h1 id="hero-titulo">Pequenas ações, quando somadas, mudam realidades inteiras.</h1>
+        <p class="hero__texto">
+          Somos uma organização não governamental dedicada a conectar voluntários, doadores e
+          comunidades vulneráveis por meio de projetos educacionais, ambientais e de assistência social.
+        </p>
+        <div class="hero__acoes">
+          <a href="cadastro.html" class="botao botao--primario">Quero ser voluntário</a>
+          <a href="projetos.html" class="botao botao--secundario">Conhecer os projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--numeros" aria-labelledby="numeros-titulo">
+      <h2 id="numeros-titulo" class="sr-only">Nossos números</h2>
+      <div class="container numeros__grade" id="numeros-grade" aria-live="polite">
+        <!-- Os cards de números são gerados dinamicamente por js/templates.js
+             a partir do array DADOS_NUMEROS, clonando o <template> abaixo. -->
+      </div>
+      <template id="template-numero">
+        <article class="numero-card">
+          <p class="numero-card__valor"></p>
+          <p class="numero-card__rotulo"></p>
+        </article>
+      </template>
+    </section>
+
+    <section class="secao secao--grafico" aria-labelledby="grafico-titulo">
+      <div class="container">
+        <h2 id="grafico-titulo">Evolução de voluntários ativos</h2>
+        <p class="hero__texto">Crescimento da nossa rede de voluntariado ano a ano.</p>
+        <div class="grafico-wrapper">
+          <canvas id="grafico-voluntarios" role="img"
+            aria-label="Gráfico de barras: número de voluntários ativos por ano, de 2022 a 2026, em crescimento contínuo de 180 para 480."></canvas>
+        </div>
+
+        <table class="sr-only">
+          <caption>Voluntários ativos por ano</caption>
+          <thead>
+            <tr>
+              <th scope="col">Ano</th>
+              <th scope="col">Voluntários ativos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2022</th>
+              <td>180</td>
+            </tr>
+            <tr>
+              <th scope="row">2023</th>
+              <td>260</td>
+            </tr>
+            <tr>
+              <th scope="row">2024</th>
+              <td>340</td>
+            </tr>
+            <tr>
+              <th scope="row">2025</th>
+              <td>410</td>
+            </tr>
+            <tr>
+              <th scope="row">2026</th>
+              <td>480</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="secao secao--sobre" aria-labelledby="sobre-titulo">
+      <div class="container secao--dividida">
+        <div class="secao__texto">
+          <h2 id="sobre-titulo">Quem somos</h2>
+          <p>
+            O <strong>Legião da Solidariedade</strong> nasceu do desejo de um grupo de estudantes e profissionais
+            em transformar boas intenções em ações concretas. Atuamos em parceria com escolas públicas,
+            cooperativas de reciclagem e centros comunitários para gerar impacto social mensurável e duradouro.
+          </p>
+          <p>
+            Acreditamos que a transformação social acontece quando conhecimento, tempo e recursos são
+            compartilhados de forma coletiva e transparente.
+          </p>
+        </div>
+        <div class="secao__texto">
+          <h2>Missão, visão e valores</h2>
+          <dl class="lista-valores">
+            <dt>Missão</dt>
+            <dd>Mobilizar pessoas e recursos para reduzir desigualdades sociais.</dd>
+            <dt>Visão</dt>
+            <dd>Ser referência regional em soluções colaborativas para o terceiro setor.</dd>
+            <dt>Valores</dt>
+            <dd>Transparência, empatia, colaboração e sustentabilidade.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--cta" aria-labelledby="cta-titulo">
+      <div class="container cta__conteudo">
+        <h2 id="cta-titulo">Faça parte dessa rede de transformação</h2>
+        <p>O seu tempo pode ser exatamente o que uma comunidade precisa agora.</p>
+        <a href="cadastro.html" class="botao botao--primario">Cadastre-se como voluntário</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div>
+        <p class="logo logo--rodape"><span aria-hidden="true">🤝</span> Legião da Solidariedade</p>
+        <p>Organização da sociedade civil de interesse público (OSCIP).</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <h2 class="rodape__titulo">Navegação</h2>
+        <ul class="rodape__lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Iniciativas</a></li>
+          <li><a href="cadastro.html">Seja Voluntário</a></li>
+        </ul>
+      </nav>
+      <address class="rodape__contato">
+        <h2 class="rodape__titulo">Contato</h2>
+        <p>contato@legiaodasolidariedade.org.br</p>
+        <p>(11) 4002-8922</p>
+        <p>São Paulo, SP - Brasil</p>
+      </address>
+    </div>
+    <p class="rodape__copy">&copy; <span id="anoAtual">2026</span> Legião da Solidariedade. Projeto acadêmico de
+      desenvolvimento front-end.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/mascaras.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/historico.js"></script>
+  <script src="js/validacao-cadastro.js"></script>
+  <script src="js/grafico.js"></script>
+  <script src="js/spa.js"></script>
+</body>
+
+</html>
