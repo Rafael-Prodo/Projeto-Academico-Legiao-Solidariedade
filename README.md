@@ -4,7 +4,7 @@
 
 **Site institucional de uma ONG fictícia, construído com HTML, CSS e JavaScript puros: semântica, acessibilidade, design system próprio e navegação estilo SPA, sem frameworks.**
 
-[![Demo online](https://img.shields.io/badge/demo-GitHub%20Pages-d96508?style=for-the-badge&logo=github)](https://rafael-prodo.github.io/experiencia-pratica-1/index.html)
+[![Demo online](https://img.shields.io/badge/demo-GitHub%20Pages-d96508?style=for-the-badge&logo=github)](https://rafael-prodo.github.io/Projeto-Academico-Legiao-Solidariedade/)
 ![HTML5](https://img.shields.io/badge/HTML5-semântico-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-Grid%20%26%20Flexbox-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES5%20modular-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
