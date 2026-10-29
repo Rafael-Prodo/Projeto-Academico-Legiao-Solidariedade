@@ -11,7 +11,7 @@
 ![Chart.js](https://img.shields.io/badge/Chart.js-4.5-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
 ![Acessibilidade](https://img.shields.io/badge/a11y-WCAG%202.1-009f9a?style=flat-square)
 
-[**🔗 Ver o projeto no ar**](https://rafael-prodo.github.io/experiencia-pratica-1/index.html)
+[**🔗 Ver o projeto no ar**](https://rafael-prodo.github.io/Projeto-Academico-Legiao-Solidariedade/)
 
 </div>
 
