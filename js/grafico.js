@@ -3,17 +3,24 @@
 var EloGrafico = (function () {
   'use strict';
 
-  var grafico;
+  var grafico = null;
 
   function iniciar() {
     var canvas = document.getElementById('grafico-voluntarios');
 
-    if (grafico) {
+    // Se o canvas mudou (ou sumiu, ao trocar de página), descarta o gráfico antigo.
+    if (grafico && (!canvas || grafico.canvas !== canvas)) {
       grafico.destroy();
       grafico = null;
     }
 
     if (!canvas) return;
+
+    // Mesmo canvas, gráfico já criado: só garante o tamanho correto.
+    if (grafico) {
+      grafico.resize();
+      return;
+    }
 
     if (typeof Chart === 'undefined') {
       console.error('Não foi possível exibir o gráfico: a biblioteca Chart.js não foi carregada.');
@@ -46,36 +53,27 @@ var EloGrafico = (function () {
         responsive: true,
         maintainAspectRatio: false,
         locale: 'pt-BR',
-        plugins: {
-          legend: {
-            display: false
-          }
-        },
+        plugins: { legend: { display: false } },
         scales: {
           x: {
-            title: {
-              display: true,
-              text: 'Ano'
-            },
-            grid: {
-              display: false
-            }
+            title: { display: true, text: 'Ano' },
+            grid: { display: false }
           },
           y: {
             beginAtZero: true,
             suggestedMax: 500,
-            ticks: {
-              precision: 0
-            },
-            title: {
-              display: true,
-              text: 'Voluntários ativos'
-            }
+            ticks: { precision: 0 },
+            title: { display: true, text: 'Voluntários ativos' }
           }
         }
       }
     });
   }
+
+  // Depois que fontes e CSS terminam de carregar, reajusta o tamanho.
+  window.addEventListener('load', function () {
+    if (grafico) grafico.resize();
+  });
 
   return { iniciar: iniciar };
 })();
