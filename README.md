@@ -1,5 +1,3 @@
-# Projeto-Academico-Legiao-Solidariedade
-
 <div align="center">
 
 # 🤝 Legião da Solidariedade
@@ -156,5 +154,3 @@ Abra o endereço indicado no terminal (por exemplo, `http://localhost:3000`).
 **Rafael** · [GitHub](https://github.com/rafael-prodo) · [LinkedIn](https://www.linkedin.com/in/rafael-prosdoskimis) 
 
 <sub>Projeto acadêmico de desenvolvimento front-end. Os dados institucionais (ONG, números e contatos) são fictícios.</sub>
-
-https://rafael-prodo.github.io/Projeto-Academico-Legiao-Solidariedade/
