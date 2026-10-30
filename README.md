@@ -116,8 +116,7 @@ Não há dependências nem etapa de build.
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/rafael-prodo/experiencia-pratica-1.git
-cd experiencia-pratica-1
+git clone https://rafael-prodo.github.io/Projeto-Academico-Legiao-Solidariedade/
 
 # 2. Sirva a pasta com qualquer servidor estático
 npx serve .
